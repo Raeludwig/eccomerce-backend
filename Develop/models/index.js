@@ -4,6 +4,14 @@ const Category = require('./Category');
 const Tag = require('./Tag');
 const ProductTag = require('./ProductTag');
 
+const db = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: '',
+    database: 'company_db'
+  });
+
+
 // Products belongsTo Category
 
 // Categories have many Products
