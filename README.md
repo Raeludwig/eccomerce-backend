@@ -34,8 +34,8 @@ $ npm install
 
 # Open mysql
 $ mysql -uroot
- source db/schema.sql
- exit 
+mysql> source db/schema.sql
+mysql> exit 
 
 # Run server
 $ node server.js
