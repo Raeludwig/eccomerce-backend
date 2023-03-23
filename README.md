@@ -32,8 +32,17 @@ $ git clone git@github.com:Raeludwig/eccomerce-backend.git
 # Install dependencies
 $ npm install
 
-# Run the app
-$ node index
+# Open mysql
+$ mysql -uroot
+$ source db/schema.sql
+$ exit 
+
+# Run server
+$ node server.js
+
+# Open Insomnia
+$ http://localhost:3001/api/tags
+$ http://localhost:3001/api/categories
 ```
 
 > **Note**
