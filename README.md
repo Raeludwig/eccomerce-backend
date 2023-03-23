@@ -34,15 +34,15 @@ $ npm install
 
 # Open mysql
 $ mysql -uroot
-$ source db/schema.sql
-$ exit 
+ source db/schema.sql
+ exit 
 
 # Run server
 $ node server.js
 
 # Open Insomnia
-$ http://localhost:3001/api/tags
-$ http://localhost:3001/api/categories
+http://localhost:3001/api/tags
+http://localhost:3001/api/categories
 ```
 
 > **Note**
