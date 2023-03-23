@@ -4,15 +4,27 @@ const Category = require('./Category');
 const Tag = require('./Tag');
 const ProductTag = require('./ProductTag');
 
-const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'company_db'
+
+  Product.belongsTo(Category, {
+    foreignKey: 'category_id',
+  });
+
+  Category.hasMany(Product, {
+    foreignKey: 'category_id',
+  });
+  
+  Product.belongsToMany(Tag, {
+    foreignKey: 'product_id',
+    through: ProductTag
+  });
+  
+  Tag.belongsToMany(Product, {
+    foreignKey: 'tag_id',
+    through: ProductTag
   });
 
 
-// Products belongsTo Category
+//  Products belongsTo Category
 
 // Categories have many Products
 

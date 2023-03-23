@@ -13,15 +13,5 @@ router.use((req, res) => {
   res.send("<h1>Wrong Route!</h1>")
 });
 
-async function init() {
-  try {
-    await sequelize.sync({ force: false });
-    app.listen(PORT, () => console.log(`App listening on port ${PORT}!`));
-  } catch (err) {
-    console.error(err);
-  }
-}
-
-init();
 
 module.exports = router;
