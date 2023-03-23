@@ -23,7 +23,7 @@ E-Commerce Backend
 
 ## How To Use
 
-To clone and run this application, you'll need VS installed on your computer. From your command line:
+To clone and run this application, you'll need VS installed on your computer. You will also need to install and use Insomnia. From your command line:
 
 ```bash
 # Clone this repository
